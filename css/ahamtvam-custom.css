@@ -1,0 +1,376 @@
+
+:root{
+    --aham-orange:#ffa500;
+    --aham-blue:#0A1543;
+    --aham-black:#111111;
+    --aham-text:#2f3552;
+    --aham-soft:#f7f7fb;
+    --aham-white:#ffffff;
+}
+html{scroll-behavior:smooth;}
+body{
+    color:var(--aham-text);
+}
+.navbar-brand img,
+.mobile-logo img{
+    height:58px;
+    width:auto;
+    object-fit:contain;
+    border-radius:8px;
+}
+.miwlo-btn-pill.btn-black{
+    background:var(--aham-blue)!important;
+    border-color:var(--aham-blue)!important;
+    color:var(--aham-white)!important;
+}
+.miwlo-btn-pill.btn-black:hover{
+    background:var(--aham-orange)!important;
+    border-color:var(--aham-orange)!important;
+    color:var(--aham-black)!important;
+}
+.miwlo-btn-border.btn-black{
+    border-color:var(--aham-blue)!important;
+    color:var(--aham-blue)!important;
+    background:transparent!important;
+}
+.miwlo-btn-border.btn-black:hover{
+    border-color:var(--aham-orange)!important;
+    color:var(--aham-black)!important;
+    background:var(--aham-orange)!important;
+}
+.header-area-desktop .navbar-nav .menu-item>a,
+.miwlo-header-mobile ul li a{
+    color:var(--aham-blue)!important;
+}
+.header-area-desktop .navbar-nav .menu-item>a.active,
+.header-area-desktop .navbar-nav .menu-item>a:hover{
+    color:var(--aham-orange)!important;
+}
+.ahamtvam-hero{
+    position:relative;
+    overflow:hidden;
+    min-height:100vh;
+    padding:130px 0 60px;
+    background:
+        radial-gradient(circle at top left, rgba(255,165,0,.18), transparent 30%),
+        linear-gradient(135deg, #fff 0%, #f4f7ff 70%, #fef7ea 100%);
+}
+.hero-shape{
+    position:absolute;
+    border-radius:999px;
+    filter:blur(4px);
+    opacity:.35;
+}
+.hero-shape-left{
+    left:-120px; top:120px; width:280px; height:280px;
+    background:rgba(255,165,0,.28);
+}
+.hero-shape-right{
+    right:-100px; top:80px; width:240px; height:240px;
+    background:rgba(10,21,67,.12);
+}
+.ahamtvam-hero-text h1{
+    font-size:72px;
+    line-height:1.05;
+    color:var(--aham-blue);
+    margin:14px 0 20px;
+    max-width:620px;
+}
+.hero-copy{
+    font-size:22px;
+    line-height:1.7;
+    max-width:610px;
+    margin-bottom:32px;
+}
+.hero-actions{
+    gap:16px;
+}
+.ahamtvam-hero-card,
+.copy-panel,
+.venture-card,
+.contact-card,
+.ahamtvam-copy-card,
+.cta-panel,
+.philosophy-panel{
+    background:#fff;
+    border:1px solid rgba(10,21,67,.08);
+    box-shadow:0 24px 60px rgba(17,17,17,.06);
+    border-radius:28px;
+}
+.ahamtvam-hero-card{
+    padding:42px 34px;
+}
+.hero-logo{
+    width:82px; height:82px; object-fit:cover; border-radius:20px; margin-bottom:20px;
+}
+.ahamtvam-hero-card h3{
+    color:var(--aham-blue);
+    font-size:30px;
+    margin-bottom:14px;
+}
+.hero-points{
+    list-style:none;
+    margin:26px 0 0;
+    padding:0;
+}
+.hero-points li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:14px;
+    color:var(--aham-blue);
+    font-weight:600;
+}
+.hero-points span,
+.venture-icon{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+}
+.hero-points span{
+    width:10px; height:10px; border-radius:50%; background:var(--aham-orange);
+}
+.section-subheading{
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--aham-orange)!important;
+    font-weight:700;
+    font-size:14px!important;
+    margin-bottom:10px;
+}
+.section-heading{
+    color:var(--aham-blue);
+    font-size:48px;
+    line-height:1.18;
+    margin-bottom:20px;
+}
+.ahamtvam-section{
+    padding:110px 0;
+}
+.ahamtvam-about-preview{
+    padding-top:70px;
+}
+.ahamtvam-copy-card{
+    padding:34px 36px;
+}
+.ahamtvam-copy-card p,
+.copy-panel p,
+.venture-card p,
+.contact-card p,
+.cta-panel p,
+.philosophy-panel p{
+    font-size:18px;
+    line-height:1.8;
+}
+.text-link{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-top:12px;
+    color:var(--aham-blue);
+    font-weight:700;
+}
+.text-link:hover,
+.venture-card a:hover,
+.miwlo-footer-text a:hover,
+.social-inline a:hover{
+    color:var(--aham-orange)!important;
+}
+.ventures-section{
+    background:var(--aham-soft);
+}
+.venture-card,
+.contact-card{
+    height:100%;
+    padding:34px 30px;
+    transition:transform .25s ease, box-shadow .25s ease;
+}
+.venture-card:hover,
+.contact-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 30px 70px rgba(17,17,17,.1);
+}
+.venture-icon{
+    width:66px;
+    height:66px;
+    border-radius:20px;
+    background:rgba(255,165,0,.14);
+    color:var(--aham-blue);
+    font-size:24px;
+    margin-bottom:22px;
+}
+.venture-card h3,
+.contact-card h3,
+.copy-panel h2,
+.cta-panel h2,
+.philosophy-panel h2{
+    color:var(--aham-blue);
+    margin-bottom:14px;
+}
+.venture-card a{
+    margin-top:18px;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    color:var(--aham-blue);
+    font-weight:700;
+}
+.philosophy-section{
+    background:linear-gradient(180deg, #fff 0%, #fff8ee 100%);
+}
+.philosophy-panel{
+    padding:54px 32px;
+    max-width:900px;
+    margin:0 auto;
+}
+.philosophy-panel h2{
+    font-size:44px;
+    line-height:1.25;
+}
+.cta-section{
+    padding-top:0;
+}
+.cta-panel{
+    padding:42px 38px;
+    background:linear-gradient(135deg, rgba(10,21,67,.98) 0%, rgba(20,35,100,.98) 100%);
+}
+.cta-panel h2,
+.cta-panel p{
+    color:#fff;
+}
+.cta-panel .section-subheading{
+    color:#ffc04a!important;
+}
+.ahamtvam-footer{
+    padding-top:90px;
+    background:var(--aham-blue)!important;
+}
+.ahamtvam-footer .miwlo-footer-text h3,
+.ahamtvam-footer .miwlo-footer-text p,
+.ahamtvam-footer .miwlo-footer-text li a,
+.ahamtvam-footer .footer-bottom-note p{
+    color:#fff!important;
+}
+.footer-bottom-note{
+    margin-top:38px;
+    padding-top:24px;
+    border-top:1px solid rgba(255,255,255,.12);
+}
+.inner-page-body{
+    background:linear-gradient(180deg, #fff 0%, #f7f9ff 100%);
+}
+.inner-page-hero{
+    padding:180px 0 90px;
+    background:
+        radial-gradient(circle at top right, rgba(255,165,0,.14), transparent 24%),
+        linear-gradient(180deg, #ffffff 0%, #f6f8ff 100%);
+}
+.inner-page-hero h1{
+    color:var(--aham-blue);
+    font-size:58px;
+    line-height:1.15;
+    max-width:900px;
+    margin:0 auto;
+}
+.copy-panel{
+    padding:36px 34px;
+    height:100%;
+}
+.emphasis-panel{
+    background:linear-gradient(180deg, #fff 0%, #fff7ea 100%);
+}
+.about-list{
+    list-style:none;
+    margin:18px 0 0;
+    padding:0;
+}
+.about-list li{
+    display:flex;
+    gap:16px;
+    margin-bottom:18px;
+    line-height:1.7;
+    font-size:18px;
+}
+.about-list span{
+    min-width:42px;
+    height:42px;
+    border-radius:14px;
+    background:var(--aham-blue);
+    color:#fff;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:14px;
+}
+.social-inline{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:22px;
+}
+.social-inline a{
+    color:var(--aham-blue);
+    font-weight:700;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+}
+.contact-card a,
+.miwlo-footer-text a{
+    color:inherit;
+}
+@media (max-width: 991px){
+    .ahamtvam-hero{
+        min-height:auto;
+        padding:140px 0 80px;
+    }
+    .ahamtvam-hero-text h1{
+        font-size:52px;
+    }
+    .section-heading,
+    .philosophy-panel h2{
+        font-size:38px;
+    }
+    .inner-page-hero{
+        padding:140px 0 70px;
+    }
+    .inner-page-hero h1{
+        font-size:42px;
+    }
+}
+@media (max-width: 767px){
+    .navbar-brand img,.mobile-logo img{
+        height:48px;
+    }
+    .ahamtvam-section{
+        padding:80px 0;
+    }
+    .ahamtvam-about-preview{
+        padding-top:40px;
+    }
+    .ahamtvam-hero-text h1{
+        font-size:40px;
+    }
+    .hero-copy,
+    .ahamtvam-copy-card p,
+    .copy-panel p,
+    .venture-card p,
+    .contact-card p,
+    .cta-panel p,
+    .philosophy-panel p,
+    .about-list li{
+        font-size:16px;
+    }
+    .section-heading,
+    .philosophy-panel h2{
+        font-size:30px;
+    }
+    .inner-page-hero h1{
+        font-size:34px;
+    }
+    .hero-actions{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+}
