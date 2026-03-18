@@ -374,3 +374,46 @@ body{
         align-items:flex-start;
     }
 }
+.loader-wrapper {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #fff7e6, #ffffff);
+  z-index: 9999;
+  overflow: hidden;
+  transition: opacity 0.6s ease;
+}
+
+.loading-text {
+  width: 100%;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.loading-text h1 {
+  margin: 0 0 10px;
+  font-size: clamp(34px, 11vw, 82px);
+  line-height: 1.1;
+}
+
+.ugadi-sub {
+  margin: 0;
+  font-size: clamp(14px, 4vw, 20px);
+  line-height: 1.5;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .loading-text h1 {
+    font-size: clamp(28px, 10vw, 52px);
+  }
+
+  .ugadi-sub {
+    font-size: 14px;
+  }
+}
