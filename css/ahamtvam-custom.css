@@ -417,3 +417,17 @@ body{
     font-size: 14px;
   }
 }
+
+/* ===== Premium Loader Exit ===== */
+.loader-wrapper {
+  transition: opacity 0.45s ease, transform 0.45s ease, filter 0.45s ease;
+  transform: scale(1);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.loader-exit {
+  opacity: 0;
+  transform: scale(0.985);
+  filter: blur(2px);
+}
