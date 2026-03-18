@@ -5,10 +5,13 @@
 	(function() {
 
 		$(window).on('load', function () {
-
-    setTimeout(function () {
-        jQuery('.loader').fadeOut('slow');
-        jQuery('.loader-wrapper').delay(3000).fadeOut(slow);
+    /*
+    ================================
+        Preloader
+    ================================
+    */
+    jQuery('.loader').fadeOut('slow');
+    jQuery('.loader-wrapper').delay(1000).fadeOut('slow');
 
     /*
     ================================
@@ -21,7 +24,6 @@
             duration: 800
         });
     })();
-
 });
 
 
