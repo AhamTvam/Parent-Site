@@ -7,17 +7,48 @@
 		$(window).on('load', function () {
 
     setTimeout(function () {
-        jQuery('.loader').fadeOut(200);
+        jQuery('.loader').fadeOut('slow');
+        jQuery('.loader-wrapper').fadeOut(700);
+    }, 3000);
 
-        jQuery('.loader-wrapper').addClass('loader-exit');
-
-        setTimeout(function () {
-            jQuery('.loader-wrapper').remove();
-        }, 600);
-
-    }, 2000); // 2 sec stay
+    /*
+    ================================
+        AOS JS
+    ================================
+    */
+    (function() {
+        AOS.init({
+            once: true,
+            duration: 800
+        });
+    })();
 
 });
+
+
+			/*
+			======================================
+				Isotope Plugin Init
+			======================================
+			*/
+
+			if( $('#miwlo-all-projects').length ) {
+				$('#miwlo-all-projects').isotope({
+					itemSelector: '.grid-item',
+					percentPosition: true,
+					transformsEnabled: true,
+					transitionDuration: "1000ms",
+					masonry: {
+						columnWidth: '.grid-sizer',
+						horizontalOrder: true
+					}
+				});
+			}
+
+		});
+
+	})();
+
 
 	/*
 	======================================
