@@ -4,59 +4,20 @@
 
 	(function() {
 
-		$(window).on('load', function() {
-			/*
-			======================================
-				Preloader
-			======================================
-			*/
-			setTimeout(function () {
-				jQuery('.loader').fadeOut(200);
+		$(window).on('load', function () {
 
-				jQuery('.loader-wrapper').addClass('loader-exit');
+    setTimeout(function () {
+        jQuery('.loader').fadeOut(200);
 
-				setTimeout(function () {
-					jQuery('.loader-wrapper').remove();
-				}, 600);
+        jQuery('.loader-wrapper').addClass('loader-exit');
 
-			}, 2000); // 2 sec stay
+        setTimeout(function () {
+            jQuery('.loader-wrapper').remove();
+        }, 600);
+
+    }, 2000); // 2 sec stay
 
 });
-			/*
-			======================================
-				AOS JS
-			======================================
-			*/
-			(function() {
-				AOS.init({
-					once: true,
-					duration: 800
-				});
-			})();
-
-
-			/*
-			======================================
-				Isotope Plugin Init
-			======================================
-			*/
-
-			if( $('#miwlo-all-projects').length ) {
-				$('#miwlo-all-projects').isotope({
-					itemSelector: '.grid-item',
-					percentPosition: true,
-					transformsEnabled: true,
-					transitionDuration: "1000ms",
-					masonry: {
-						columnWidth: '.grid-sizer',
-						horizontalOrder: true
-					}
-				});
-			}
-
-		});
-
-	})();
 
 	/*
 	======================================
