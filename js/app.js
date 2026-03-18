@@ -11,7 +11,7 @@
 			======================================
 			*/
 			jQuery('.loader').fadeOut('slow');
-			jQuery('.loader-wrapper').delay(3000).fadeOut('slow');
+			jQuery('.loader-wrapper').delay(3000).fadeOut('192');
 
 
 			/*
