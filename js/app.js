@@ -10,10 +10,18 @@
 				Preloader
 			======================================
 			*/
-			jQuery('.loader').fadeOut('slow');
-			jQuery('.loader-wrapper').delay(3000).fadeOut('192');
+			setTimeout(function () {
+				jQuery('.loader').fadeOut(200);
 
+				jQuery('.loader-wrapper').addClass('loader-exit');
 
+				setTimeout(function () {
+					jQuery('.loader-wrapper').remove();
+				}, 600);
+
+			}, 2000); // 2 sec stay
+
+});
 			/*
 			======================================
 				AOS JS
