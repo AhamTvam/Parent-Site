@@ -4,27 +4,28 @@
 
 	(function() {
 
-		$(window).on('load', function () {
-    /*
-    ================================
-        Preloader
-    ================================
-    */
-    jQuery('.loader').fadeOut('slow');
-    jQuery('.loader-wrapper').delay(1000).fadeOut('slow');
+		$(window).on('load', function() {
+			/*
+			======================================
+				Preloader
+			======================================
+			*/
+			jQuery('.loader').fadeOut('slow');
+			jQuery('.loader-wrapper').delay(1000).fadeOut('slow');
 
-    /*
-    ================================
-        AOS JS
-    ================================
-    */
-    (function() {
-        AOS.init({
-            once: true,
-            duration: 800
-        });
-    })();
-});
+
+			/*
+			======================================
+				AOS JS
+			======================================
+			*/
+			(function() {
+				AOS.init({
+					once: true,
+					duration: 800
+				});
+			})();
+
 
 			/*
 			======================================
@@ -48,7 +49,6 @@
 		});
 
 	})();
-
 
 	/*
 	======================================
