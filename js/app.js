@@ -8,8 +8,7 @@
 
     setTimeout(function () {
         jQuery('.loader').fadeOut('slow');
-        jQuery('.loader-wrapper').fadeOut(700);
-    }, 3000);
+        jQuery('.loader-wrapper').delay(3000).fadeOut(slow);
 
     /*
     ================================
