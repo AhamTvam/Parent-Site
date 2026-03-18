@@ -4,26 +4,27 @@
 
 	(function() {
 
-		$(window).on('load', function () {
+		$(window).on('load', function() {
+			/*
+			======================================
+				Preloader
+			======================================
+			*/
+			jQuery('.loader').fadeOut('slow');
+			jQuery('.loader-wrapper').delay(1000).fadeOut('slow');
 
-    setTimeout(function () {
-        jQuery('.loader').fadeOut('slow');
-        jQuery('.loader-wrapper').fadeOut(700);
-    }, 3000);
 
-    /*
-    ================================
-        AOS JS
-    ================================
-    */
-    (function() {
-        AOS.init({
-            once: true,
-            duration: 800
-        });
-    })();
-
-});
+			/*
+			======================================
+				AOS JS
+			======================================
+			*/
+			(function() {
+				AOS.init({
+					once: true,
+					duration: 800
+				});
+			})();
 
 
 			/*
