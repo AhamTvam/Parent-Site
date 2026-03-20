@@ -374,3 +374,173 @@ body{
         align-items:flex-start;
     }
 }
+
+@media (max-width: 768px) {
+  /* Header */
+  .header-area,
+  .site-header,
+  header {
+    padding: 14px 18px;
+  }
+
+  .site-logo img,
+  .navbar-brand img,
+  .logo img {
+    width: 56px;
+    height: auto;
+  }
+
+  /* Top contact button */
+  .header-btn,
+  .contact-btn,
+  .miwlo-btn-pill,
+  .btn-contact {
+    padding: 12px 22px;
+    font-size: 16px;
+    border-radius: 14px;
+    min-width: auto;
+  }
+
+  /* Hamburger */
+  .menu-toggle,
+  .mobile-menu-toggle,
+  .hamburger-menu {
+    transform: scale(0.9);
+  }
+
+  /* Hero */
+  .hero-content h1,
+  .banner-content h1 {
+    font-size: 52px;
+    line-height: 1.05;
+    margin-bottom: 18px;
+  }
+
+  .hero-content p,
+  .banner-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+  }
+
+  /* Hero buttons */
+  .hero-actions,
+  .hero-btns,
+  .button-group {
+    gap: 14px;
+  }
+
+  .hero-actions a,
+  .hero-btns a,
+  .button-group a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+
+  /* Right intro card */
+  .intro-card,
+  .hero-card,
+  .ideas-card {
+    padding: 28px;
+    border-radius: 28px;
+  }
+
+  .intro-card h3,
+  .hero-card h3,
+  .ideas-card h3 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .intro-card p,
+  .hero-card p,
+  .ideas-card p,
+  .intro-card li {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  /* Section headings */
+  .section-title h2,
+  .section-heading,
+  .section-heading h2 {
+    font-size: 42px;
+    line-height: 1.12;
+  }
+
+  .section-subtitle,
+  .section-subheading {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
+  /* Venture / content cards */
+  .feature-card,
+  .venture-card,
+  .content-card,
+  .about-card,
+  .contact-card {
+    padding: 28px;
+    border-radius: 28px;
+  }
+
+  .feature-card h3,
+  .venture-card h3,
+  .content-card h3 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .feature-card p,
+  .venture-card p,
+  .content-card p,
+  .about-card p {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  /* Contact numbers/email */
+  .contact-card a,
+  .footer-contact a,
+  .footer-contact p,
+  .contact-info a,
+  .contact-info p {
+    font-size: 15px;
+    line-height: 1.8;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  /* Footer */
+  .footer-area,
+  footer {
+    padding: 56px 24px;
+  }
+
+  .footer-area h3,
+  footer h3 {
+    font-size: 22px;
+  }
+
+  .footer-area p,
+  footer p,
+  .footer-area a,
+  footer a {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-phone,
+  .footer-phone,
+  .phone-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
