@@ -544,3 +544,33 @@ body{
     gap: 8px;
   }
 }
+
+.footer-bottom-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-policies a {
+  color: #ffffff;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-policies a:hover {
+  color: #FFA500;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom-flex {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-policies a {
+    margin: 0 8px;
+  }
+}
