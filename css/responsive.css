@@ -2612,42 +2612,47 @@
 
 }
 
-
-@media(max-width:768px){
-
-  /* HEADER */
-  .header-area,
-  .header-main,
-  .navbar{
-    padding:12px 18px !important;
-    min-height:auto !important;
-  }
+@media only screen and (max-width: 767px){
 
   /* LOGO */
+  .site-logo img,
   .logo img{
-    width:70px !important;
-    height:auto;
+    width:85px !important;
+    max-width:85px !important;
+    height:auto !important;
+  }
+
+  /* HEADER SPACING */
+  .header-area,
+  .header__area,
+  .header-main,
+  .navbar{
+    padding-top:10px !important;
+    padding-bottom:10px !important;
   }
 
   /* CONTACT BUTTON */
+  .theme-btn,
   .header-btn,
-  .contact-btn,
-  .theme-btn{
-    padding:10px 18px !important;
+  .contact-btn{
+    padding:12px 20px !important;
     font-size:15px !important;
-    border-radius:14px !important;
-  }
-
-  /* MENU ICON */
-  .mobile-menu-toggle,
-  .menu-bar{
-    font-size:28px !important;
+    border-radius:16px !important;
+    min-height:auto !important;
   }
 
   /* HERO BUTTONS */
-  .explore-btn{
+  .hero-btn .theme-btn,
+  .banner-btn .theme-btn{
     padding:14px 22px !important;
     font-size:16px !important;
+  }
+
+  /* MOBILE MENU ICON */
+  .menu-icon,
+  .mobile-nav-toggler,
+  .menu-bar{
+    font-size:28px !important;
   }
 
 }
